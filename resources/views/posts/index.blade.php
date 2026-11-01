@@ -9,7 +9,10 @@
 
             <input type="text" placeholder="What's on your minh, Bro?" class="form-control">
 
-            <button class="btn btn-success">Post</button>
+            <button
+                data-bs-toggle="modal"
+                data-bs-target="#post"
+                class="btn btn-success">Post</button>
         </div>
 
         {{-- Selection --}}
@@ -70,6 +73,52 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad alias voluptatem exercitationem.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- Post modal --}}
+    <div class="modal" id="post" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="my-3">
+                        <label for="" class="form-label">Title</label>
+                        <input type="text" name="title" class="form-control">
+                    </div>
+
+                    <div class="my-3">
+                        <label for="" class="form-label">Title</label>
+                        <input type="text" name="title" class="form-control">
+                    </div>
+
+                    <div class="my-3">
+                        <label for="" class="form-label">Title</label>
+                        <input type="text" name="title" class="form-control">
+                    </div>
+
+                    <div class="my-3">
+                        <label for="" class="form-label">Title</label>
+                        <input type="text" name="title" class="form-control">
+                    </div>
+
+                    <div class="my-3">
+                        <label for="" class="form-label">Title</label>
+                        <input type="text" name="title" class="form-control">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+
             </div>
         </div>
     </div>
