@@ -11,3 +11,4 @@ Route::get('/contact', [PostController::class, 'contact'])->name('contact');
 Route::post('/blog/create', [PostController::class, 'create'])->name('post');
 Route::get('/blog/edit/{id}', [PostController::class, 'edit'])->name('edit');
 Route::put('/blog/update/{id}', [PostController::class, 'update'])->name('update');
+Route::delete('/blog/delete/{id}', [PostController::class, 'delete'])->name('delete');

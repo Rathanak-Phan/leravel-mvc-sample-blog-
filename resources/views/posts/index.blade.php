@@ -27,6 +27,19 @@
                                         <i class="fa-solid fa-ellipsis-vertical"></i>
                                     </button>
                                 </form>
+
+                                <form
+                                    action="{{ route('delete', $post->id) }}"
+                                    onsubmit="return confirm('Are you sure to delete your post?')"
+                                    method="POST">
+                                    @csrf
+                                    @method('DELETE')
+
+                                    <button
+                                        type="submit">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </form>
                             </button>
                         </div>
                         <img class="w-100" src="{{ asset('storage/' . $post->image) }}" alt="">
