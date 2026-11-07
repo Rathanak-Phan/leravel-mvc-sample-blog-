@@ -22,7 +22,11 @@
                     <div class="col-12 p-2 border border-gray-400 rounded-lg">
                         <div class="d-flex justify-content-end">
                             <button class="border-0 bg-none">
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <form action="{{ route('edit', $post->id) }}">
+                                    <button type="submit">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </form>
                             </button>
                         </div>
                         <img class="w-100" src="{{ asset('storage/' . $post->image) }}" alt="">
@@ -74,7 +78,7 @@
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="submit" class="btn btn-primary">Post</button>
                     </div>
                 </form>
             </div>
